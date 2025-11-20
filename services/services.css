@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+.headnav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 1px 8px #fe4e5152;
+    z-index: 1;
+}
+.logo img{
+    width: 100%;
+    height: 10vh;
+    display: block;
+}
+.navs{
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.headnav p{
+    font-size: 50px;
+}
+.navs a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transform: scale3d(43deg);
+}
+.navs a:hover{
+    transform: scale(1.05);
+    color: #fe4e50;
+    transition: all 0.3s ease;
+}
+.navs a:active{
+    color: #232f67;
+    transition: all 0.3s ease;
+}
+#bars{
+    display: none;
+}
+#extra{
+    margin-bottom: 4em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+#extra.display{
+    max-height: 2000px;
+}
+.secondnav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    background-color: #232f6750;
+    backdrop-filter: blur(10px);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 600;
+    position: fixed;
+    width: 70%;
+    height: 110vh;
+    inset: 0;
+    left: -500px;
+    z-index: 1;
+    transition: all 0.3s ease;
+    justify-content: space-around;
+}
+.secondnav button a{
+    color:rgb(0, 0, 0);
+}
+.secondnav button a:hover{
+    text-decoration: underline;
+}
+.secondnav button {
+    padding: 5px;
+    border: 4px solid #232f67;
+    background-color:#ffffff;
+    font-weight: 600;
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 80px;
+}
+.secondnav a{
+    color: #000000;
+    width: 70%;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.236);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    padding: 10px;
+}
+.show{
+    left: 0;
+}
+.services{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.our{
+    font-size: 60px;
+    color: #232f67;
+    font-weight: 700;
+}
+
+.ourdiv::after{
+    content: '';
+    border-bottom: 4px solid #fe4e50;
+    padding-left: 8em;
+}
+.cards a{
+    text-decoration: none;
+    color: black;
+}
+#extra a{
+    text-decoration: none;
+    color: black;
+}
+.morebtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.morebtns button{
+    padding: 4px 10px;
+    background-color: transparent;
+    border: 2px solid #232f67;
+    font-weight: 600;
+    font-size: 20px;
+}
+.morebtns button:hover{
+    background-color: #232f67;
+    color: white;
+    transition: all 0.3s;
+}
+.learn{
+    font-size: 30px;
+    padding-top: 18px;
+    font-weight: 300;
+}
+.servicetext{
+    font-size: 20px;
+    width: 60%;
+    padding-top: 20px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    height: auto;  
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.card i{
+    font-size: 30px;
+    color: #f56c6e;
+}
+
+.boldservice{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    color: #232f67;
+}
+.card:hover{
+    background-color: #232f67;
+    color: white;
+    transition: all 0.3s linear;
+    .boldservice{
+        color: white;
+    }
+}
+.Foot div a:hover{
+    transform: scale(1.05);
+    color: #fe4e50;
+    transition: all 0.3s ease;
+}
+.Foot div a{
+    padding-top: 20px;
+    color: black;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 578px) {
+    .secondnav{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 578px) {
+    .navs{
+        display: none;
+    }
+    #bars{
+        display: block;
+    }
+}
+.contact{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+    background-color: #232f671c;
+    margin-top: 3em;
+}
+.details{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 2em;
+    font-weight: 600;
+}
+.details i{
+    color: #232f67;
+}
+.contacthead{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 38px;
+    color: #232f67;
+    font-weight: 800;
+}
+.speech{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    padding-top: 20px;
+}
+@media screen and (max-width:658px) {
+    .contacthead{
+        width: 50%;
+    }
+}
+@media screen and (max-width:379px) {
+    .contacthead{
+        width: 100%;
+    }
+}
+
+.contactside{
+    width: 40%;
+}
+.foothead{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.Foot{
+    width: 70vh;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.Foot div p{
+    padding-top: 20px;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 20%;
+    font-size: 50px;
+    font-weight: 800;
+    color: #232f67;
+}
+.logos{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width:1323px) {
+    .Foot{
+        grid-template-columns: repeat(2, 1fr);
+        width: 50vh;
+        width: 15%;
+        gap: 40px;
+    }
+    .contacthead{
+        width: 50%;
+    }
+}
+@media screen and (max-width:715px) {
+    .Foot{
+        grid-template-columns: repeat(1, 1fr);
+        width: 50vh;
+        width: 15%;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:763px) {
+    .Logo{
+        display: none;
+    }
+    .contact{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:346px) {
+    .Foot{
+        margin-top: 3em;
+        gap: 2px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .contacthead{
+        width: 100%;
+    }
+    .speech{
+        width: 100%;
+    }
+}
+@media screen and (max-width:884px) {
+   .cards{
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+   }
+   #extra{
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+   }
+}
+@media screen and (max-width: 578px) {
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #extra{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services{
+        height: 80vh;
+    }
+}
+@media screen and (max-width: 482px) {
+        .servicetext{
+            width: 90%;
+        } 
+}
+@media screen and (max-width:346px) {
+    .Foot{
+        margin-top: 3em;
+        gap: 2px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .contacthead{
+        width: 100%;
+    }
+}
+@media screen and (max-width:694px) {
+    .contact{
+        flex-direction: column;
+    }
+    .Foot{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4em;
+    }
+    .contacthead{
+        width: 100%;
+    }
+    .contactside{
+        width: 100%;
+    }
+    .speech{
+        width: 70%;
+    }
+}
+@media screen and (max-width:461px) {
+   .Foot{
+    gap: 2px;
+   }
+}
