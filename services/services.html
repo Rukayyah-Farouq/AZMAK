@@ -20,7 +20,6 @@
                 <a href="../about us/about.html">About Us</a>
                 <a href="./services.html">Services</a>
                 <a href="../sign-up.html">Sign Up</a>
-                <a href="#contact">Contact</a>
             </div>
             <i id="bars" class="fa-solid fa-bars" style="font-size: 25px;color: #232f67;"></i>
         </div>
@@ -28,7 +27,6 @@
      <a href="../index.html">Home</a>
     <a href="../about us/about.html">About Us</a>
     <a href="./services.html">Services</a>
-    <a href="#contact">Contact</a>
     <a href="../sign-up.html">Sign Up</a>
     <button>Login</button>
 </div>
@@ -62,8 +60,6 @@
         <p class="servicebody">We teach how to build stunning, user-friendly, and fully responsive websites from scratch. You'll master HTML, CSS, JavaScript and modern frameworks, creating digital experiences that stand out.</p>
     </div>
  </a>
-   
-   
 </header>
 <div id="extra">   
     <a href="../sign-up.html">
@@ -138,7 +134,7 @@
             </div>
             <div class="details">
                 <i class="fa-solid fa-comments"></i>
-                <p >Azmak@gmail.com</p>
+                <p>azmakcomp@gmail.com</p>
             </div>
             <div class="details">
                 <i class="fa-solid fa-phone"></i>
@@ -153,14 +149,16 @@
                 <a href="../about us/about.html">About Us</a>
                 <a href="./services.html">Services</a>
                 <a href="../sign-up.html">Sign Up</a>
-                <a href="#contact">Contact</a></div>
+            </div>
                 </div> 
                 <div>
                 <p class="foothead">Socials</p>
-                <p>Linkedin</p>
-                <p>Facebook</p>
-                <p>Twitter</p>
+                <div class="links">
+                <a href="https://www.tiktok.com/@azmak001" target="_blank">Tiktok</a>
+                <a href="https://www.facebook.com/share/1U5EdBmbpq/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/azmak_comp/" target="_blank">Instagram</a>
                 </div>
+            </div>
                 <div>
                 <p class="foothead">Courses</p>
                 <p>Web Development</p>
@@ -175,13 +173,16 @@
         </div>
         </header>
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
 <script>
   AOS.init({
     duration:1000,
     once: true,
     mirror: true,
   });
+  </script>
+  <script>
   document.querySelector('#bars').addEventListener('click', function(){
     document.getElementById('secondnav').classList.toggle('show')
   })
