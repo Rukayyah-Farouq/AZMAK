@@ -100,7 +100,7 @@ input[type=number]{
 }
 @media screen and (max-width: 1063px) {
     .intro img{
-        width: 12%;
+        width: 15%;
     }
     form{
         width: 30%;
@@ -108,7 +108,7 @@ input[type=number]{
 }
 @media screen and (max-width: 819px) {
     .intro img{
-        width: 14%;
+        width: 20%;
     }
     form{
         width: 38%;

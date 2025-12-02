@@ -5,6 +5,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     user-select: none;
 }
+
 .headnav{
     width: 100%;
     height: auto;
@@ -17,6 +18,7 @@
     color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
+    left: 0;
     background-color: white;
     box-shadow: 0 1px 8px #fe4e5152;
     z-index: 1;
@@ -30,7 +32,6 @@
     gap: 20px;
     display: flex;
     justify-content: space-between;
-    
 }
 .headnav p{
     font-size: 50px;
@@ -50,6 +51,7 @@
     transition: all 0.3s ease;
 }
 .herosection{
+    padding: 8%;
     margin-top: 1.5cm;
     width: 100%;
     height:35em;
@@ -83,7 +85,8 @@
     border: 2px solid #fe4e50;
     background-color: transparent;
     color: rgb(0, 0, 0);
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .herobtns button:hover{
@@ -105,6 +108,7 @@
     margin-top: 50px;
 }
 .abstract{
+    padding: 8%;
     background-image: url(./shape2.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -151,7 +155,7 @@
     color: #000000;
     width: 90%;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.236);
+    background-color: rgba(189, 189, 189, 0.498);
     backdrop-filter: blur(30px);
     border-radius: 10px;
     padding: 10px;
@@ -196,7 +200,6 @@
     background-blend-mode: overlay;
     height: initial;
     color: white
-
 }
 .cardgrid{
     width: 100%;
@@ -221,6 +224,7 @@
     margin-bottom: 1em;
 }
 .work{
+    padding: 8%;
     width: 100%;
     height: 15vh;
     display: flex;
@@ -228,7 +232,6 @@
     justify-content: center;
     font-size: 40px;
     font-weight: 600;
-
 }
 .cardcontents{
     height: 100%;
@@ -240,7 +243,6 @@
 .arrow i{
     color: #ffffff;
     font-size: 16px;
-
 }
 .specialty{
     color: rgb(0, 0, 0);
@@ -269,7 +271,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 8%;
     margin-top: 4em;
 }
 .listtext{
@@ -340,7 +342,7 @@
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
+    padding: 8%;
     gap: 10px;
     background-color: #232f671c;
     margin-top: 70px;
@@ -399,7 +401,6 @@
 .show{
     left: 0;
 }
-
 @media screen and (min-width: 578px) {
     .secondnav{
         display: none;
@@ -413,7 +414,6 @@
         display: block;
     }
 }
-
 @media screen and (max-width: 1232px) {
     .stats{
         grid-template-columns: repeat(2, 1fr);
@@ -439,7 +439,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media screen and (max-width: 636px) {
     .herosection{
     width: 100%;
@@ -483,6 +482,9 @@
         margin: 0;
         font-weight: 700;
     }
+    body{
+        padding: 10px;
+    }
 }
 @media screen and (max-width:914px) {
     .services{
@@ -494,7 +496,6 @@
         margin: 0;
     }
 }
-
 @media screen and (max-width:734px) {
     .services{
         grid-template-columns: repeat(2, 1fr);
@@ -574,6 +575,7 @@
     }
 }
 .cta{
+    padding: 8%;
     width: 100%;
     height: 70vh;
     background-repeat: no-repeat;
@@ -627,7 +629,6 @@
         font-size: 20px;
     }
 }
-
 .contact{
     width: 100%;
     height: auto;
@@ -636,7 +637,7 @@
     align-items: start;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 10px;
+    padding: 8%;
     background-color: #232f671c;
     margin-top: 3em;
 }
@@ -654,12 +655,13 @@
 .contacthead{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 70%;
     font-size: 38px;
     color: #232f67;
     font-weight: 800;
 }
 .speech{
+    width: 100%;
     font-size: 16px;
     font-weight: 400;
     color: black;

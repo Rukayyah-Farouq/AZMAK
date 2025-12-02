@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     user-select: none;
+    padding: 40em;
 }
 .headnav{
     width: 100%;
@@ -12,7 +13,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 8px;
     color: rgb(0, 0, 0);
     position: fixed;
@@ -38,9 +39,7 @@
 .navs a{
     color: rgb(0, 0, 0);
     text-decoration: none;
-    transform: scale3d(43deg);
 }
-
 .herosection{
     margin-top: 1.5cm;
     width: 100%;
@@ -374,6 +373,9 @@
 }
 .show{
     left: 0;
+}
+.speech{
+    width: 80%;
 }
 
 @media screen and (max-width: 578px) {
