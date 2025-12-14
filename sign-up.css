@@ -6,7 +6,7 @@
     user-select: none;
 }
 .wrap{
-    height: auto;
+    height: 100vh;
 }
 .home{
     width: 100%;
@@ -44,7 +44,7 @@
 }
 .formsection{
     width: 100%;
-    height: auto;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,7 +54,7 @@
 }
 form{
     width: 22%;
-    height: auto;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
